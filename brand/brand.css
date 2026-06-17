@@ -1,0 +1,49 @@
+/* =============================================================================
+ * brand.css — design tokens. Cada slide copia estos valores INLINE en su <style>
+ * (no se enlaza este archivo: los slides deben ser self-contained).
+ * Esta es la única fuente de verdad visual — edítala para que calce con brand.json.
+ *
+ * Starter neutral. Reemplaza la paleta y las fuentes por las de TU marca.
+ * =========================================================================== */
+
+:root {
+  /* Colors */
+  --bg:           #0B0F1A;  /* fondo de página */
+  --surface:      #151B2B;  /* cards, paneles */
+  --primary:      #2563EB;  /* acento hero, highlight de keywords, CTAs */
+  --primary-deep: #1E40AF;  /* profundidad — sombras, hovers */
+  --accent:       #60A5FA;  /* highlight secundario */
+  --secondary:    #1E293B;  /* surfaces oscuras */
+  --text:         #FFFFFF;  /* foreground principal */
+  --muted:        #94A3B8;  /* texto secundario */
+  --success:      #10B981;
+  --danger:       #EF4444;
+
+  /* Typography — Geist (gratis, license-clean) con fallback a system fonts */
+  --font-display: 'Geist', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-body:    'Geist', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-mono:    'Geist Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+
+  /* Spacing */
+  --radius:  12px;
+  --unit:    8px;
+  --spacing: 80px;
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+code, pre {
+  font-family: var(--font-mono);
+}

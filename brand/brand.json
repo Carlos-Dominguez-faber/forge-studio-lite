@@ -1,0 +1,52 @@
+{
+  "name": "YOUR BRAND",
+  "tagline": "Tu promesa en una línea va aquí.",
+  "positioning": "Describe a quién ayudas y la transformación que entregas. Esto orienta el tono de cada slide.",
+  "colors": {
+    "primary":      "#2563EB",
+    "primary_deep": "#1E40AF",
+    "accent":       "#60A5FA",
+    "secondary":    "#1E293B",
+    "background":   "#0B0F1A",
+    "surface":      "#151B2B",
+    "text":         "#FFFFFF",
+    "muted":        "#94A3B8",
+    "success":      "#10B981",
+    "danger":       "#EF4444"
+  },
+  "typography": {
+    "headline": "Geist",
+    "body":     "Geist",
+    "mono":     "Geist Mono"
+  },
+  "logo":      "brand/assets/logo.png",
+  "logo_dark": "brand/assets/logo.png",
+  "style": "clean, high-contrast, editorial. Reemplaza por tu propio registro visual.",
+  "spacing": {
+    "radius": 12,
+    "unit": 8
+  },
+  "safe_words": [
+    "REEMPLAZA",
+    "con",
+    "las",
+    "palabras",
+    "que tu marca usa de verdad"
+  ],
+  "avoid_words": [
+    "revolutionary / revolucionario",
+    "cutting-edge",
+    "AI-powered (como cualidad principal)",
+    "best-in-class",
+    "leverage",
+    "synergy",
+    "disrupt",
+    "ecosystem",
+    "unlock your potential",
+    "Act now!",
+    "Limited time!",
+    "barato",
+    "fácil",
+    "increíble"
+  ]
+}

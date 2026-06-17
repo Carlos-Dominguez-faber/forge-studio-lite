@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<style>
+  @font-face {
+    font-family: "Geist";
+    src: url("https://cdn.jsdelivr.net/npm/geist@1.5.1/dist/fonts/geist-sans/Geist-Variable.woff2") format("woff2-variations");
+    font-weight: 100 900;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Geist Mono";
+    src: url("https://cdn.jsdelivr.net/npm/geist@1.5.1/dist/fonts/geist-mono/Geist-Mono-Variable.woff2") format("woff2-variations");
+    font-weight: 100 900;
+    font-display: swap;
+  }
+  :root {
+    --bg: #0B0F1A;
+    --surface: #151B2B;
+    --primary: #2563EB;
+    --primary-deep: #1E40AF;
+    --accent: #60A5FA;
+    --text: #FFFFFF;
+    --muted: #94A3B8;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    width: 1080px; height: 1080px;
+    background: var(--bg); color: var(--text);
+    overflow: hidden;
+    font-family: "Geist", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .slide {
+    width: 1080px; height: 1080px;
+    padding: 96px;
+    display: flex; flex-direction: column; justify-content: center;
+    position: relative;
+    background:
+      radial-gradient(110% 80% at 90% 0%, rgba(37,99,235,0.12) 0%, rgba(37,99,235,0) 50%),
+      var(--bg);
+  }
+  .badge {
+    font-family: "Geist Mono", monospace;
+    font-size: 180px; font-weight: 700;
+    line-height: 0.9; letter-spacing: -6px;
+    color: var(--accent);
+    margin-bottom: 24px;
+  }
+  .badge .label {
+    display: block;
+    font-size: 24px; font-weight: 600;
+    letter-spacing: 6px; text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 10px;
+  }
+  .heading {
+    font-size: 76px; font-weight: 800;
+    line-height: 1.04; letter-spacing: -2px;
+    color: var(--text);
+    max-width: 16ch;
+    margin-bottom: 40px;
+  }
+  .body {
+    font-size: 38px; font-weight: 400;
+    line-height: 1.5; color: var(--muted);
+    max-width: 24ch;
+  }
+  .body strong { color: var(--text); font-weight: 600; }
+  /* left accent rail */
+  .slide::before {
+    content: ""; position: absolute; left: 0; top: 200px;
+    width: 8px; height: 680px;
+    background: linear-gradient(180deg, var(--primary), var(--primary-deep));
+    border-radius: 0 6px 6px 0;
+  }
+  .counter {
+    position: absolute; right: 96px; bottom: 72px;
+    font-family: "Geist Mono", monospace;
+    font-size: 28px; color: var(--muted); letter-spacing: 2px;
+  }
+  .counter b { color: var(--primary); font-weight: 600; }
+</style>
+</head>
+<body>
+  <div class="slide">
+    <div class="badge"><span class="label">Error</span>02</div>
+    <h2 class="heading">Cada slide cierra la idea completa.</h2>
+    <p class="body">Si una slide se entiende sola, no hay razón para deslizar. Cada slide debe dejar una <strong>pregunta abierta</strong> que solo la siguiente cierra. Eso es lo que sostiene el deslizamiento hasta el final.</p>
+    <div class="counter"><b>02</b> / 03</div>
+  </div>
+</body>
+</html>

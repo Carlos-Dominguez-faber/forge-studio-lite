@@ -1,0 +1,33 @@
+{
+  "name": "YOUR BRAND",
+  "tone": "Describe tu tono en 2–4 atributos con guion (ej: cercano-directo, experto-sin-jerga).",
+  "tone_attributes": [
+    "Reemplaza cada línea con una regla concreta de tono para tu marca",
+    "Ej: diagnóstico, no crítica — explicas el problema sin moralizar",
+    "Ej: confianza serena — autoridad sin pose"
+  ],
+  "vibe": "Una línea: ¿qué se siente hablar contigo?",
+  "audience": "¿Para quién es este carrusel? Sé específico (rol, nivel, dolor).",
+  "language": "es",
+  "hooks": [
+    "Tu mejor frase de una línea — la slide 01 arranca con esta.",
+    "Una segunda opción de hook.",
+    "Una tercera."
+  ],
+  "cta_style": "directo, no pushy — invita o pide compartir, no presiona",
+  "cta_examples": [
+    "Si te sirvió, guárdalo.",
+    "Sígueme para más.",
+    "El link está en mi bio.",
+    "¿Qué piensas? Te leo en comentarios."
+  ],
+  "avoid": [
+    "revolutionary / revolucionario / cutting-edge",
+    "leverage / synergy / disrupt / ecosystem",
+    "best-in-class / AI-powered (como cualidad principal)",
+    "unlock your potential",
+    "Act now! / Limited time!",
+    "barato / fácil / increíble",
+    "templates IA-slop: gradiente azul-morado, Inter sobre blanco, 3 cards iguales"
+  ]
+}

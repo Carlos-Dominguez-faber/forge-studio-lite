@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<style>
+  @font-face {
+    font-family: "Geist";
+    src: url("https://cdn.jsdelivr.net/npm/geist@1.5.1/dist/fonts/geist-sans/Geist-Variable.woff2") format("woff2-variations");
+    font-weight: 100 900;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Geist Mono";
+    src: url("https://cdn.jsdelivr.net/npm/geist@1.5.1/dist/fonts/geist-mono/Geist-Mono-Variable.woff2") format("woff2-variations");
+    font-weight: 100 900;
+    font-display: swap;
+  }
+  :root {
+    --bg: #0B0F1A;
+    --surface: #151B2B;
+    --primary: #2563EB;
+    --primary-deep: #1E40AF;
+    --accent: #60A5FA;
+    --text: #FFFFFF;
+    --muted: #94A3B8;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    width: 1080px; height: 1080px;
+    background: var(--bg); color: var(--text);
+    overflow: hidden;
+    font-family: "Geist", system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .slide {
+    width: 1080px; height: 1080px;
+    padding: 96px;
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center; text-align: center;
+    position: relative;
+    background:
+      radial-gradient(85% 70% at 50% 38%, rgba(37,99,235,0.22) 0%, rgba(37,99,235,0) 60%),
+      var(--bg);
+  }
+  .kicker {
+    font-family: "Geist Mono", monospace;
+    font-size: 28px; font-weight: 600;
+    letter-spacing: 8px; text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 48px;
+  }
+  .tagline {
+    font-size: 84px; font-weight: 800;
+    line-height: 1.06; letter-spacing: -2.5px;
+    max-width: 18ch;
+    margin-bottom: 64px;
+  }
+  .tagline .hl { color: var(--primary); }
+  .cta {
+    display: inline-flex; align-items: center; gap: 18px;
+    background: var(--primary);
+    color: #0B0F1A;
+    font-size: 42px; font-weight: 700;
+    letter-spacing: -0.5px;
+    padding: 26px 52px;
+    border-radius: 999px;
+    box-shadow: 0 0 60px rgba(37,99,235,0.45);
+    margin-bottom: 44px;
+  }
+  .cta .handle { font-family: "Geist Mono", monospace; font-weight: 600; }
+  .share {
+    font-size: 32px; font-weight: 400;
+    color: var(--muted); line-height: 1.45;
+    max-width: 26ch;
+  }
+  /* top + bottom accent rules */
+  .rule {
+    position: absolute; left: 50%; transform: translateX(-50%);
+    width: 220px; height: 4px;
+    background: linear-gradient(90deg, transparent, var(--primary), transparent);
+  }
+  .rule.top { top: 120px; }
+  .rule.bottom { bottom: 120px; }
+</style>
+</head>
+<body>
+  <div class="slide">
+    <div class="rule top"></div>
+    <div class="kicker">El orden primero</div>
+    <h1 class="tagline">Elige la <span class="hl">estructura</span> antes de diseñar la primera slide.</h1>
+    <div class="cta">Guárdalo <span class="handle">&rarr; @tuhandle</span></div>
+    <p class="share">Si te sirvió, guárdalo para tu próximo carrusel.</p>
+    <div class="rule bottom"></div>
+  </div>
+</body>
+</html>

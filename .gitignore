@@ -1,0 +1,50 @@
+# Secrets
+.env
+.env.local
+.env.*.local
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# TypeScript
+dist/
+build/
+*.tsbuildinfo
+
+# Carruseles renderizados (output, regenerable)
+carousels/
+
+# Banco de fotos por marca (binarios — tus propios archivos)
+brand/photos/*
+!brand/photos/.gitkeep
+brand/assets/*
+!brand/assets/.gitkeep
+
+# Fotos del banco auto-copiadas + stock descargado dentro de los ejemplos
+examples/**/slides/source/*.png
+examples/**/slides/source/*.jpg
+examples/**/slides/source/*.jpeg
+examples/**/slides/source/*.webp
+examples/**/slides/source/*-manifest.json
+
+# PNGs renderizados de los ejemplos (regenerables — se conserva el HTML/JSON fuente)
+examples/**/slides/*.png
+
+# Playwright
+.cache/ms-playwright/
+
+# OS
+.DS_Store
+Thumbs.db
+.Spotlight-V100
+.Trashes
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

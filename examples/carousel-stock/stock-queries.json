@@ -1,0 +1,12 @@
+{
+  "source": "pexels",
+  "queries": [
+    "minimalist workspace desk dark",
+    "soft morning light office",
+    "person typing laptop closeup"
+  ],
+  "count": 4,
+  "max_per_query": 12,
+  "prefix": "stock",
+  "orientation": "square"
+}
